@@ -1,0 +1,49 @@
+:root {
+  --fuenteTitulo: "Fredoka", sans-serif;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+.listaMenu {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+.barraMenu {
+  margin: auto;
+}
+.menu1 {
+  display: flex;
+  align-items: center;
+}
+
+.titulo {
+  color: #203cad;
+  font-size: 28px;
+  font-weight: 800;
+  font-family: var(--fuenteTitulo);
+}
+
+.schedule {
+  display: flex;
+  gap: 15px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+.tarjetas {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.tarjeta {
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.794);
+  padding: 20px;
+  border: 1px solid black;
+}
+.icon {
+  width: 15px;
+}
