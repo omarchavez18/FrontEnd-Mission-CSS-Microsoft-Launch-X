@@ -1,19 +1,30 @@
 :root {
   --fuenteTitulo: "Fredoka", sans-serif;
 }
+.flex {
+  display: flex;
+}
 
-.menu {
+.barraNavegacion {
   display: flex;
   justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.472);
+  position: fixed;
+  width: 100%;
+  height: 80px;
 }
 .listaMenu {
   list-style: none;
   display: flex;
-  gap: 35px;
+  justify-content: space-between;
+  padding-right: 0;
+  width: 474px;
+  align-items: center;
+  font-family: var(--fuenteTitulo);
+  font-size: 14px;
+  color: gray;
 }
-.barraMenu {
-  margin: auto;
-}
+
 .menu1 {
   display: flex;
   align-items: center;
@@ -21,8 +32,19 @@
 
 .titulo {
   color: #203cad;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 800;
+  font-family: var(--fuenteTitulo);
+}
+.button {
+  background-color: #2849c9;
+  color: white;
+  width: 120px;
+  height: 38px;
+  border-radius: 5px;
+  border-style: none;
+  font-weight: 400;
+  font-size: 13px;
   font-family: var(--fuenteTitulo);
 }
 
@@ -46,4 +68,17 @@
 }
 .icon {
   width: 15px;
+}
+
+.imagen {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  margin-top: 80px;
+}
+
+.headerColumn1 {
+  width: 50%;
+  padding-top: 175px;
 }
