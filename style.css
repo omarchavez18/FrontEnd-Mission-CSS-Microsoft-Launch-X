@@ -131,6 +131,7 @@ body {
   color: #0f0f62;
   border-radius: 10px;
   margin-left: 142px;
+  box-shadow: 7px -1px 26px 3px #b4c6d054;
 }
 
 .alignIcons {
@@ -152,18 +153,7 @@ body {
 .scheduleP {
   margin-top: 0px;
   padding-left: 23px;
-}
-.tarjetas {
-  display: flex;
-  gap: 25px;
-  justify-content: center;
-}
-
-.tarjeta {
-  margin: 5px;
-  background-color: rgba(255, 255, 255, 0.794);
-  padding: 20px;
-  border: 1px solid black;
+  font-weight: 200;
 }
 .icon {
   width: 18px;
@@ -178,4 +168,72 @@ body {
 }
 .imagen > img {
   width: 100%;
+}
+
+/* MARCAS DE LABORATORIOS*/
+
+.lab {
+  width: 100%;
+  height: 210px;
+  border: 1px solid black;
+}
+
+/*WHY SHOULD I VACCINE?*/
+.whyVaccine {
+  display: flex;
+  flex-direction: column;
+  padding-left: 120px;
+}
+.whyVaccine > h2 {
+  font-size: 43px;
+  color: #13336a;
+  font-family: var(--fuenteTitulo2);
+  margin-bottom: 22px;
+}
+.whyVaccine > p {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*TARJETAS*/
+
+.tarjetas {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.tarjeta {
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.794);
+  padding: 20px;
+  border: 1px solid rgba(219, 206, 206, 0.219);
+  width: 200px;
+  border-radius: 10px;
+}
+
+.tarjeta:hover {
+  box-shadow: 5px 0px 30px -3px #94afeb9e;
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+.tarjeta > svg {
+  width: 39px;
+}
+
+.tarjeta > h4 {
+  font-size: 22px;
+  color: #0e2f68;
+  font-weight: 400;
+  margin-top: 0px;
+}
+.tarjeta > p {
+  font-size: 16px;
+  font-family: var(--fuenteTitulo2);
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.575);
 }
