@@ -1,28 +1,37 @@
 :root {
   --fuenteTitulo: "Fredoka", sans-serif;
+  --fuenteTitulo2: "League Spartan", sans-serif;
+}
+body {
+  font-family: var(--fuenteTitulo);
+  color: gray;
 }
 .flex {
   display: flex;
 }
-
+.align {
+  display: flex;
+  align-items: center;
+}
+/* BARRA DE NAVEGACION*/
 .barraNavegacion {
   display: flex;
   justify-content: space-around;
   background-color: rgba(255, 255, 255, 0.472);
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 110px;
 }
 .listaMenu {
   list-style: none;
   display: flex;
   justify-content: space-between;
   padding-right: 0;
-  width: 474px;
+  width: 721px;
   align-items: center;
-  font-family: var(--fuenteTitulo);
-  font-size: 14px;
-  color: gray;
+  font-size: 18px;
+  gap: 42px;
+  margin-bottom: 31px;
 }
 
 .menu1 {
@@ -32,27 +41,117 @@
 
 .titulo {
   color: #203cad;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 800;
-  font-family: var(--fuenteTitulo);
+  padding-left: 14px;
 }
 .button {
   background-color: #2849c9;
   color: white;
-  width: 120px;
-  height: 38px;
+  width: 138px;
+  height: 46px;
   border-radius: 5px;
   border-style: none;
-  font-weight: 400;
-  font-size: 13px;
-  font-family: var(--fuenteTitulo);
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 200ms ease-in-out;
+}
+.button:hover {
+  box-shadow: 9px 3px 32px -2px rgba(30, 110, 124, 0.555);
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+/*HEADER*/
+.headerColumn1 {
+  width: 50%;
+  padding-top: 170px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 65px;
+}
+
+.h1Header {
+  color: rgb(31, 62, 114);
+  font-weight: 800;
+  font-size: 60px;
+  margin-bottom: 0px;
+  font-family: var(--fuenteTitulo2);
+}
+.pMain {
+  display: flex;
+  color: black;
+  font-size: 21px;
+  font-weight: 500;
+  padding-bottom: 7px;
+}
+.pMain > svg {
+  margin-right: 9px;
+}
+.main > p:not(.pMain) {
+  line-height: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(63, 78, 115, 0.69);
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 9px;
+}
+.headerList {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #07195a;
+  align-items: center;
+  margin-right: 44px;
+}
+.headerList > div {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.headerList > div > li {
+  padding-left: 10px;
+  padding-bottom: 84px;
 }
 
 .schedule {
   display: flex;
-  gap: 15px;
-  border: 1px solid black;
   margin-bottom: 20px;
+  height: 145px;
+  width: 871px;
+  position: absolute;
+  background-color: white;
+  justify-content: space-around;
+  font-size: 22px;
+  color: #0f0f62;
+  border-radius: 10px;
+  margin-left: 142px;
+}
+
+.alignIcons {
+  display: flex;
+  align-items: center;
+  padding-right: 19px;
+  margin-top: 13px;
+  margin-bottom: 0px;
+}
+
+.alignIcons > svg {
+  padding-right: 9px;
+}
+.alignIcons > p {
+  color: gray;
+  font-weight: 400;
+}
+
+.scheduleP {
+  margin-top: 0px;
+  padding-left: 23px;
 }
 .tarjetas {
   display: flex;
@@ -67,7 +166,7 @@
   border: 1px solid black;
 }
 .icon {
-  width: 15px;
+  width: 18px;
 }
 
 .imagen {
@@ -75,10 +174,8 @@
   background-size: cover;
   background-position: center;
   width: 50%;
-  margin-top: 80px;
+  margin-top: 110px;
 }
-
-.headerColumn1 {
-  width: 50%;
-  padding-top: 175px;
+.imagen > img {
+  width: 100%;
 }
