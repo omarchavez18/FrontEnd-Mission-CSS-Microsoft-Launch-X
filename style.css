@@ -9,6 +9,11 @@ body {
 .flex {
   display: flex;
 }
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
 .align {
   display: flex;
   align-items: center;
@@ -236,4 +241,129 @@ body {
   font-family: var(--fuenteTitulo2);
   line-height: 21px;
   color: rgba(0, 0, 0, 0.575);
+}
+
+/*PREPARATION BEFORE VACCINE*/
+.flexColumn > h2 {
+  font-size: 43px;
+  color: #13336a;
+  font-family: var(--fuenteTitulo2);
+  margin-bottom: 22px;
+}
+.flexColumn > p {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.preparationImage {
+  width: 50%;
+}
+.preparationImage > img {
+  height: 100%;
+}
+
+.cartas {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.carta {
+  background-color: rgba(255, 255, 255, 0.794);
+  border: 1px solid rgba(219, 206, 206, 0.219);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 448px;
+  height: 59px;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  color: #1b348b;
+}
+
+.carta > h3 {
+  padding-right: 135px;
+}
+
+.carta > p {
+  padding-bottom: 11px;
+}
+
+.carta:hover {
+  box-shadow: 5px 0px 30px -3px #94afeb9e;
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+/*CONTACTOS*/
+
+.cartasContacto {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding-left: 85px;
+}
+
+.cartaContacto {
+  background-color: rgba(255, 255, 255, 0.794);
+  border: 1px solid rgba(219, 206, 206, 0.219);
+  border-radius: 10px;
+  width: 252px;
+  height: 224px;
+}
+.cartaContacto > div > svg {
+  width: 36px;
+  padding-left: 23px;
+}
+
+.flexColumnContact {
+  display: flex;
+  flex-direction: column;
+  padding-left: 39px;
+  padding-bottom: 28px;
+}
+
+.flexColumnContact > p {
+  font-size: 26px;
+  margin-bottom: 12px;
+  color: #203cad;
+}
+
+.flexColumnContact :nth-child(2) {
+  font-size: 15px;
+  margin-top: 0px;
+  color: rgb(173, 165, 165);
+}
+
+.buttonContact {
+  width: 199px;
+  display: flex;
+  justify-content: center;
+  background-color: #e8dbdb91;
+  color: blue;
+  border-radius: 5px;
+  border: none;
+  height: 59px;
+  margin-left: 24px;
+  font-size: 19px;
+  font-family: var(--fuenteTitulo);
+}
+.buttonContact:hover {
+  color: white;
+  background-color: blue;
+}
+
+.preparationImageContact {
+  width: 60%;
+}
+.preparationImageContact > img {
+  width: 100%;
+}
+
+.pL {
+  padding-left: 85px;
+  padding-bottom: 60px;
 }
