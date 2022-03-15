@@ -6,6 +6,14 @@ body {
   font-family: var(--fuenteTitulo);
   color: gray;
 }
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0f0f62;
+}
 .flex {
   display: flex;
 }
