@@ -18,6 +18,16 @@ body {
   display: flex;
   align-items: center;
 }
+
+.marginBottom {
+  margin-bottom: 80px;
+}
+.marginBottomEmergency {
+  margin-bottom: 40px;
+}
+.paddingLeft {
+  padding-left: 100px;
+}
 /* BARRA DE NAVEGACION*/
 .barraNavegacion {
   display: flex;
@@ -48,7 +58,7 @@ body {
   color: #203cad;
   font-size: 28px;
   font-weight: 800;
-  padding-left: 14px;
+  padding-left: 0px;
 }
 .button {
   background-color: #2849c9;
@@ -180,7 +190,6 @@ body {
 .lab {
   width: 100%;
   height: 210px;
-  border: 1px solid black;
 }
 
 /*WHY SHOULD I VACCINE?*/
@@ -304,12 +313,11 @@ body {
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
-  padding-left: 85px;
 }
 
 .cartaContacto {
   background-color: rgba(255, 255, 255, 0.794);
-  border: 1px solid rgba(219, 206, 206, 0.219);
+  border: 1px solid rgba(111, 100, 100, 0.22);
   border-radius: 10px;
   width: 252px;
   height: 224px;
@@ -366,4 +374,53 @@ body {
 .pL {
   padding-left: 85px;
   padding-bottom: 60px;
+}
+
+/*FOOTER*/
+footer {
+  background: #eef3ff;
+}
+
+.footerTitle {
+  color: #203cad;
+  font-size: 21px;
+  font-weight: 800;
+  padding-left: 0px;
+}
+.footerFlex {
+  display: flex;
+  align-content: space-around;
+}
+.footerFlex > p {
+  width: 50%;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.footerMain {
+  text-align: start;
+  width: 50%;
+}
+
+.footerMain > div {
+  padding-left: 100px;
+}
+
+.footerAside {
+  display: flex;
+  padding-left: 120px;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.footerList {
+  list-style: none;
+  padding-left: 0px;
+  gap: 29px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gap {
+  gap: 35px;
 }
