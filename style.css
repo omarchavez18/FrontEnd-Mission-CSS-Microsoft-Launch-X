@@ -22,6 +22,7 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
+
 .align {
   display: flex;
   align-items: center;
@@ -30,12 +31,14 @@ a:hover {
 .marginBottom {
   margin-bottom: 80px;
 }
+
 .marginBottomEmergency {
   margin-bottom: 40px;
 }
 .paddingLeft {
   padding-left: 100px;
 }
+
 /* BARRA DE NAVEGACION*/
 .barraNavegacion {
   display: flex;
@@ -43,18 +46,7 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.472);
   position: fixed;
   width: 100%;
-  height: 110px;
-}
-.listaMenu {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  padding-right: 0;
-  width: 721px;
-  align-items: center;
-  font-size: 18px;
-  gap: 42px;
-  margin-bottom: 31px;
+  min-height: 110px;
 }
 
 .menu1 {
@@ -68,6 +60,19 @@ a:hover {
   font-weight: 800;
   padding-left: 0px;
 }
+.listaMenu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0;
+  width: 721px;
+  align-items: center;
+  font-size: 18px;
+  gap: 42px;
+  margin-bottom: 31px;
+}
+/**/
+
 .button {
   background-color: #2849c9;
   color: white;
@@ -89,6 +94,7 @@ a:hover {
   width: 50%;
   padding-top: 170px;
 }
+
 .main {
   display: flex;
   flex-direction: column;
@@ -137,6 +143,8 @@ a:hover {
   align-items: center;
   list-style: none;
 }
+/**/
+
 .headerList > div > li {
   padding-left: 10px;
   padding-bottom: 84px;
@@ -189,6 +197,8 @@ a:hover {
   width: 50%;
   margin-top: 110px;
 }
+/**/
+
 .imagen > img {
   width: 100%;
 }
@@ -200,12 +210,17 @@ a:hover {
   height: 210px;
 }
 
+.lab > img {
+  width: 100%;
+}
+
 /*WHY SHOULD I VACCINE?*/
 .whyVaccine {
   display: flex;
   flex-direction: column;
   padding-left: 120px;
 }
+
 .whyVaccine > h2 {
   font-size: 43px;
   color: #13336a;
@@ -228,6 +243,8 @@ a:hover {
   justify-content: center;
   margin-top: 34px;
 }
+
+/**/
 
 .tarjeta {
   margin: 5px;
@@ -261,6 +278,11 @@ a:hover {
 }
 
 /*PREPARATION BEFORE VACCINE*/
+
+.preparationFlex {
+  display: flex;
+}
+/**/
 .flexColumn > h2 {
   font-size: 43px;
   color: #13336a;
@@ -282,6 +304,8 @@ a:hover {
   height: 100%;
 }
 
+/**/
+
 .cartas {
   display: flex;
   flex-direction: column;
@@ -301,13 +325,19 @@ a:hover {
   color: #1b348b;
 }
 
+/**/
+
 .carta > h3 {
   padding-right: 135px;
 }
 
+/**/
+
 .carta > p {
   padding-bottom: 11px;
 }
+
+/**/
 
 .carta:hover {
   box-shadow: 5px 0px 30px -3px #94afeb9e;
@@ -322,6 +352,8 @@ a:hover {
   gap: 25px;
   flex-wrap: wrap;
 }
+
+/**/
 
 .cartaContacto {
   background-color: rgba(255, 255, 255, 0.794);
@@ -433,4 +465,110 @@ footer {
 
 .gap {
   gap: 35px;
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+  .flexColumn {
+    text-align: center;
+  }
+  .marginBottom {
+    margin-bottom: 2px;
+  }
+  .paddingLeft {
+    padding-left: 0px;
+  }
+  .barraNavegacion {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .menu1 {
+    justify-content: center;
+  }
+  .listaMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0px;
+    padding: 0px;
+    width: 400px;
+  }
+
+  .headerColumn1 {
+    padding-top: 0px;
+    width: 100%;
+  }
+  .main {
+    text-align: center;
+    padding-right: 0px;
+  }
+  .headerList > div {
+    height: 50px;
+  }
+  .schedule {
+    width: 95%;
+    flex-wrap: wrap;
+    margin: 0px;
+    height: 250px;
+    box-shadow: 7px -1px 26px 3px #3b677f8f;
+  }
+  .imagen {
+    margin-top: 259px;
+    background-image: url(./images/imagenHeaderRecorte.png);
+    height: 342px;
+    width: 400px;
+  }
+  .imagen > img {
+    display: none;
+  }
+  .lab {
+    height: 30px;
+  }
+  .whyVaccine {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .tarjetas {
+    flex-wrap: wrap;
+  }
+  .tarjeta {
+    padding: 5px;
+    border: 1px solid rgba(132, 120, 120, 0.22);
+  }
+  .preparationFlex {
+    display: block;
+  }
+  .preparationImage > img {
+    width: 366px;
+  }
+  .carta {
+    width: 95%;
+  }
+  .carta > h3 {
+    padding-right: 0px;
+  }
+  .carta > p {
+    font-size: 13px;
+  }
+  .cartasContacto {
+    justify-content: center;
+  }
+  .preparationImageContact {
+    width: 350px;
+  }
+  .footerMain {
+    width: 100%;
+  }
+  .footerMain > div {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .footerAside {
+    padding-left: 0px;
+    gap: 40px;
+    margin-top: 40px;
+  }
 }
